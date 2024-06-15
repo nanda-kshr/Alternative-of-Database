@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Uploaded Images</title>
+</head>
+
+<body>
+    <h2>Upload Image</h2>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <button type="submit" name="submit">Upload</button>
+    </form>
+    <hr>
+    <h2>Uploaded Images</h2>
+    <div id="fileContainer">
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function fetchImages() {
+                fetch('uploaded_images.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const fileContainer = document.getElementById('fileContainer');
+                        fileContainer.innerHTML = '';
+                        data.forEach(file => {
+                            const img = document.createElement('img');
+                            img.src = 'uploads/' + file;
+                            img.alt = file;
+                            fileContainer.appendChild(img);
+                            const deleteBtn = document.createElement('button');
+                            deleteBtn.textContent = 'Delete';
+                            deleteBtn.onclick = function () {
+                                fetch('delete.php?file=' + encodeURIComponent(file))
+                                    .then(() => fetchImages())
+                                    .catch(error => console.error('Error deleting file:', error));
+                            };
+                            fileContainer.appendChild(deleteBtn);
+                        });
+                    })
+                    .catch(error => console.error('Error fetching images:', error));
+            }
+            fetchImages();
+        });
+    </script>
+</body>
+
+</html>

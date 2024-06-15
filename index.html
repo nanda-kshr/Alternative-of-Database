@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="icon" type="image/x-icon" href="assets/logo.ico">
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <meta name="description" content="Map Academy Website">
+  <meta name="viewport" content="width=device-width,
+                   initial-scale=1">
+  <title>Map Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Englebert&family=Lato:wght@400;900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+
+<body>
+
+  <div class="row">
+    <div class="col-lg-1">
+
+    </div>
+    <div class="col-lg-10 navigationbar">
+      <nav class="navbar navbar-expand-lg navbarBG">
+        <div class="container-fluid">
+          <div class="logo">
+            <img src="assets/logo.png" alt="">
+          </div>
+
+          <button class="navbar-toggler" type=" button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active homebtn navbaritem" aria-current="page"
+                  href="javascript:showPage('index.html')">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active navbaritem" aria-current="page"
+                  href="javascript:showPage('about.html')">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active navbaritem" aria-current="page"
+                  href="javascript:showPage('programs.html')">Programs</a>
+              </li>
+              <li class="nav-item" id="knm">
+                <a class="nav-link active navbaritem" aria-current="page"
+                  href="javascript:showPage('location.html')">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active navbaritem" aria-current="page"
+                  href="javascript:showPage('testimonials.html')">Admission</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="col-lg-1 col-0">
+
+    </div>
+  </div>
+  <div class="homeDiv">
+
+    <div class="row">
+      <div class="col-lg-1 ">
+
+      </div>
+      <div class="col-lg-10 welcomebg">
+        <div class="row">
+          <div class="col-lg-7">
+
+          </div>
+          <div class="col-lg-3 imgCol">
+            <div class="mainPlace welcome_anim">
+              <p
+                style="font-size: 20px; letter-spacing: normal; line-height: normal; display: inline-block; color: rgb(1,121,111); font: normal normal normal 20px/1.4em brandon-grot-w01-light, brandon-grot-w05-light, sans-serif;text-decoration: underline;">
+                Welcome to</p>
+              <h1
+                style="font-size: 48px; color: rgb(1,121,111); font-weight: bold; font: normal normal normal 45px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;">
+                Map Academy<br>Preschool Pod</h1>
+              <br>
+              <p
+                style="font-size: 25px; color: rgb(1,121,111); font: normal normal normal 25px/1.4em brandon-grot-w01-light, brandon-grot-w05-light, sans-serif;">
+                Play Learn Grow</p>
+            </div>
+
+          </div>
+          <div class="col-lg-1">
+
+          </div>
+        </div>
+        <div class="col-lg-1">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <hr style="border:2px solid rgb(1,121,111);;">
+
+  <div class="reviewBg review_anim reviewBgm">
+    <div class="row ">
+      <div class="col-2">
+        <div class="revbtns">
+          <br><br>
+          <button onclick="prevQuote()"><i class="fi fi-sr-angle-left" style="font-size: 35px;"></i></button>
+        </div>
+      </div>
+      <div class="col-8">
+        <div id="rev" class="rev">
+          <div class="center-content">
+            <h1 style="font-size: 52px;">What's new</h1>
+            <p id="revh"></p>
+            <p id="revp"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="revbtns">
+          <br><br>
+          <button onclick="nextQuote()"><i class="fi fi-sr-angle-right" style="font-size: 35px;"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviewBg review_anim " style="max-height: 400px !important; ">
+    <div class="row ">
+      <hr style="border:2px solid rgb(1,121,111);;">
+      <div class="col-2"
+        style=" display: flex;justify-content: center;align-items: center;height:350px !important;max-height: 350px !important;">
+        <div class="revbtns">
+          <button onclick="prevImage()"><i class="fi fi-sr-angle-left" style="font-size: 35px;"></i></button>
+        </div>
+      </div>
+      <div class="col-8 d-flex align-items-center justify-content-center">
+
+        <div id="rev" class="rev">
+          <div class="center-content">
+            <img id="revi" class="img-fluid" src="upload/uploads/6613a04b5c538.png"
+              style="max-height: 300px !important;">
+          </div>
+        </div>
+
+      </div>
+      <div class="col-2"
+        style=" display: flex;justify-content: center;align-items: center;height:400px !important;max-height: 350px !important;">
+        <div class="revbtns">
+          <button onclick="nextImage()"><i class="fi fi-sr-angle-right" style="font-size: 35px;"></i></button>
+        </div>
+      </div>
+      <hr style="border:2px solid rgb(1,121,111);position: absolute;bottom: 0;width: 100%;">
+    </div>
+  </div>
+  </div>
+  <script>
+    var revis = [];
+    var currenti = 0;
+
+    let reviewImage = document.getElementById("revi");
+
+    function fetchImageNames() {
+      return fetch("upload/uploaded_images.json")
+        .then(response => response.json())
+        .then(data => {
+          revis = data;
+        })
+        .catch(error => console.error('Error fetching image names:', error));
+    }
+
+    function nextImage() {
+      reviewImage = document.getElementById("revi");
+      fetchImageNames().then(() => {
+        currenti++;
+        if (currenti == revis.length) {
+          currenti = 0;
+        }
+        reviewImage.src = "upload/uploads/" + revis[currenti];
+        console.log("upload/uploads/" + revis[currenti]);
+      });
+    }
+
+    function prevImage() {
+      reviewImage = document.getElementById("revi");
+      currenti--;
+      if (currenti == -1) {
+        currenti = revis.length - 1;
+      }
+      reviewImage.src = "upload/uploads/" + revis[currenti];
+    }
+
+  </script>
+
+  <h1
+    style="font-size: 35px;text-align:center;color:rgb(1,121,111);margin-top:100px;font: normal normal normal 50px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;text-decoration: underline;">
+    Our Learning <br>Environments</h1>
+  <br>
+  <br>
+  <div class="row ">
+    <div class="col-lg-3 image_icons">
+      <div class="imageIcon">
+        <img src="assets/book.png" alt="">
+      </div>
+      <p class="abtimages"
+        style="font-size:20px;color: rgb(1,121,111);font: normal normal normal 20px/1.8rem brandon-grot-w01-light, brandon-grot-w05-light, sans-serif;">
+        At Map Academy Preschool Pod, we provide a nurturing environment for infants to grow and learn. Our experienced
+        staff is dedicated to ensuring that your child receives the best possible care.</p>
+    </div>
+    <div class="col-lg-3 image_icons">
+      <div class="imageIcon">
+        <img src="assets/toy-blocks.png" alt="">
+      </div>
+      <p class="abtimages"
+        style="font-size:20px;color: rgb(1,121,111);font: normal normal normal 20px/1.8rem brandon-grot-w01-light, brandon-grot-w05-light, sans-serif;">
+        As your child transitions from infancy to toddlerhood, our program at Map Academy Preschool Pod is designed to
+        encourage exploration, creativity, and learning through play. Our staff works with each child to help them
+        develop social skills, fine and gross motor skills, and a love for learning.</p>
+
+    </div>
+    <div class="col-lg-3 image_icons">
+      <div class="imageIcon">
+        <img src="assets/girl.png" alt="">
+      </div>
+      <p class="abtimages"
+        style="font-size:20px;color: rgb(1,121,111);font: normal normal normal 20px/1.8rem brandon-grot-w01-light, brandon-grot-w05-light, sans-serif;">
+        At Map Academy Preschool Pod, our preschool program is designed to prepare your child for kindergarten and
+        beyond. Our curriculum focuses on practical and hands-on learning activities that are both fun and educational.
+        Our experienced teachers work with each child to foster a love for learning and exploration.</p>
+
+    </div>
+    <div class="col-lg-3 image_icons">
+      <div class="imageIcon">
+        <img src="assets/drawing.png" alt="">
+      </div>
+      <p class="abtimages "
+        style="font-size:20px;color: rgb(1,121,111);font: normal normal normal 20px/1.8rem brandon-grot-w01-light, brandon-grot-w05-light, sans-serif;">
+        In our Pre-K program at Map Academy Preschool Pod, we focus on building a strong foundation for your child's
+        future academic success. Our curriculum includes a variety of activities that promote critical thinking,
+        problem-solving, and creativity.</p>
+
+    </div>
+  </div>
+  <hr style="border:2px solid rgb(1,121,111);;">
+  <div class="row">
+    <div class="col-lg-1">
+    </div>
+    <div class="col-lg-5 col-sm-12">
+
+      <div class="about-img center-block">
+        <img class="center-block" src="assets/abouthome.jpg" alt="">
+      </div>
+    </div>
+    <div class="col-lg-5 learnmore color_15 approach_anim">
+      <br><br><br>
+      <h1
+        style="font-size: 35px;margin:50px auto auto;letter-spacing: 0.05em;display :inline-block;font: normal normal normal 50px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;text-decoration: underline;"
+        class="color_45">Our Approach</h1>
+      <br>
+      <p
+        style="padding:50px;font-size:20px;color: rgb(1,121,111);font: normal normal normal 20px/1.8rem brandon-grot-w01-light, brandon-grot-w05-light, sans-serif;">
+        At Map Academy Preschool Pod, we believe that every child is unique and has their own learning style. Our
+        practical educational approach is designed to meet the individual needs of each child. We provide a safe and
+        nurturing environment where children can explore, learn, and grow at their own pace.</p>
+      <a href="/about.html" class="color_15 normalBtn" style="margin:auto auto 50px auto;">Learn More About Us</a>
+    </div>
+    <div class="col-lg-1">
+    </div>
+  </div>
+
+  <br><br>
+
+  <!-- <hr style="border:2px solid rgb(1,121,111);;">
+  
+  <div class="reviewBg review_anim reviewBgm">
+    <div class="row ">
+      <div class="col-2">
+        <div class="revbtns">
+          <br><br>
+          <button onclick="prevQuote()"><i class="fi fi-sr-angle-left" style="font-size: 35px;"></i></button>
+        </div>
+      </div>
+      <div class="col-8">
+        <div id="rev" class="rev">
+          <div class="center-content">
+            <h1 style="font-size: 52px;">Latest</h1>
+            <h3 id="revh">Lisa Driver, MI</h3>
+            <p id="revp">“Have customers review you and share what they had to say.”</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="revbtns">
+          <br><br>
+          <button onclick="nextQuote()"><i class="fi fi-sr-angle-right" style="font-size: 35px;"></i></button>
+        </div>
+      </div>
+  
+    </div>
+  </div> -->
+
+  <div class="contactUs">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1
+          style="font-size: 52px;text-align:center;color: #FFF5ED;;margin:10px auto;font: normal normal normal px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;text-decoration: underline;">
+          Contact us</h1>
+
+      </div>
+
+    </div>
+    <div class="row">
+
+      <div class="col-lg-4  col-md-12 col-sm-12">
+
+        <i class="fi fi-sr-envelope" style="font-size: 35px;"></i>
+        <br><br>
+        <p>priyadusi@hotmail.com</p>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12">
+
+        <i class="fi fi-sr-phone-call" style="font-size: 35px;"></i>
+        <br><br>
+        <p>(425) 283-8213</p>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12">
+
+        <i class="fi fi-sr-marker" style="font-size: 35px;"></i>
+        <br><br>
+        <p>MAP Academy - <br>16185 NE 117th street, Redmond, WA-98052</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.9.0.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+  <script src="./script/script.js" charset="utf-8"></script>
+</body>
+
+</html>

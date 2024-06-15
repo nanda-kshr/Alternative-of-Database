@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live News</title>
+    <link rel="stylesheet" href="style/latestnews.css">
+</head>
+
+<body>
+    <h1>Live News</h1>
+    <div id="news-container"></div>
+
+    <h2>Add News</h2>
+    <form action="latest.php" method="post">
+        <label for="content">Type Here:</label><br>
+        <textarea id="content" name="content"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function fetchNews() {
+            fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    const newsContainer = document.getElementById('news-container');
+                    newsContainer.innerHTML = ''; 
+
+                    data.forEach((news, index) => {
+                        const newsItem = document.createElement('div');
+                        newsItem.innerHTML = `
+                        <p>${news.content}</p>
+                        <p>Published at: ${new Date(news.timestamp * 1000)}</p>
+                        <button onclick="deleteNews(${index})">Delete</button>
+                        <hr>
+                    `;
+                        newsContainer.appendChild(newsItem);
+                    });
+                })
+                .catch(error => console.error('Error fetching news:', error));
+        }
+
+        function deleteNews(index) {
+            fetch(`latest.php?action=delete&id=${index}`)
+                .then(response => {
+                    if (response.ok) {
+                        // Reload news after successful deletion
+                        fetchNews();
+                    } else {
+                        console.error('Failed to delete news item');
+                    }
+                })
+                .catch(error => console.error('Error deleting news:', error));
+        }
+
+        // Fetch news when the page loads
+        fetchNews();
+    </script>
+
+</body>
+
+</html>
